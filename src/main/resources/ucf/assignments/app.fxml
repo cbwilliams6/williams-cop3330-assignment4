@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ucf.assignments.Controller">
+   <children>
+      <VBox alignment="CENTER" layoutX="120.0" layoutY="14.0" prefHeight="146.0" prefWidth="360.0" spacing="10.0">
+         <children>
+            <Label text="Create New To-Do List">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Label text="To-Do List Name" />
+            <TextField fx:id="todo_create" promptText="Enter name" />
+            <Button mnemonicParsing="false" onAction="#createList" prefHeight="42.0" prefWidth="73.0" text="Save" />
+         </children>
+      </VBox>
+      <HBox layoutX="83.0" layoutY="190.0" prefHeight="196.0" prefWidth="435.0" spacing="50.0">
+         <children>
+            <ListView fx:id="todo_listView" prefHeight="196.0" prefWidth="286.0" />
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#loadLists" prefHeight="39.0" prefWidth="81.0" text="Load Lists" />
+                  <Button mnemonicParsing="false" onAction="#viewListView" prefHeight="39.0" prefWidth="81.0" text="View List" />
+                  <Button mnemonicParsing="false" onAction="#editListView" prefHeight="39.0" prefWidth="81.0" text="Edit List" />
+                  <Button mnemonicParsing="false" onAction="#removeList" prefHeight="39.0" prefWidth="81.0" text="Remove List" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
