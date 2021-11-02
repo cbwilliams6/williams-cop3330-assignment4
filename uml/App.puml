@@ -1,0 +1,8 @@
+@startuml
+
+class App {
+    {method} main(args: String[]): void
+    {method} start(Stage primaryStage): void
+}
+
+@enduml

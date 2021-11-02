@@ -45,8 +45,8 @@
             <TableView fx:id="todo_tableView" prefHeight="288.0" prefWidth="571.0">
               <columns>
                 <TableColumn fx:id="todo_tableDescription" onEditCommit="#editDescription" prefWidth="336.0" text="Description" />
-                <TableColumn fx:id="todo_tableDate" minWidth="0.0" prefWidth="132.0" text="Due Date" />
-                  <TableColumn fx:id="todo_tableCompletion" prefWidth="102.0" text="Completion" />
+                <TableColumn fx:id="todo_tableDate" minWidth="0.0" onEditCommit="#editDate" prefWidth="132.0" text="Due Date" />
+                  <TableColumn fx:id="todo_tableCompletion" onEditCommit="#editCompletion" prefWidth="102.0" text="Completion" />
               </columns>
             </TableView>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">

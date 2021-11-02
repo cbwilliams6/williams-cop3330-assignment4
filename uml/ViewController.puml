@@ -1,0 +1,19 @@
+@startuml
+
+class Controller {
+    {method} setList(String: listName): void
+    {method} fillTable(): void
+    {method} newItem(): void
+    {method} removeItem(): void
+    {method} showAll(): void
+    {method} showIncomplete(): void
+    {method} showComplete(): void
+    {method} itemWriter(List <List<String>>: itemList): void
+    {method} createListView(ActionEvent: event): void
+    {method} editDescription(TableColumn.CellEditEvent: editedDescription): void
+    {method} editDate(TableColumn.CellEditEvent: editedDate): void
+    {method} editCompletion(TableColumn.CellEditEvent: editedCompletion): void
+    {method} initialize(): void
+}
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+
+class Controller {
+    {method} populateLists(): void
+    {method} createList(): void
+    {method} removeList(): void
+    {method} saveList(): void
+    {method} saveAll(): void
+    {method} loadLists(): void
+    {method} editListView(ActionEvent: event): void
+    {method} viewListView(ActionEvent: event): void
+    {method} initialize(): void
+}
+
+@enduml

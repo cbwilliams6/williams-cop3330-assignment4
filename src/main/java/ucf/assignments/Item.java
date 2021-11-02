@@ -6,10 +6,10 @@
 package ucf.assignments;
 
 import javafx.beans.property.SimpleStringProperty;
-import javafx.scene.control.CheckBox;
 import java.time.LocalDate;
 
 public class Item {
+    // everything in here is just setting up the Item class that's used in ViewController, nothing really special here
     private SimpleStringProperty description;
     private LocalDate dueDate;
     private SimpleStringProperty completion;

@@ -1,0 +1,9 @@
+@startuml
+
+class Controller {
+    {method} setList(String: listName): void
+    {method} editList(): void
+    {method} createListView(ActionEvent event): void
+}
+
+@enduml
